@@ -3,6 +3,7 @@
 
 html {
     --theme__color: #ed733f;
+    --secondary__color: #fbe3d9;
     scroll-behavior: smooth;
 }
 
@@ -49,11 +50,11 @@ li {
 }
 
 #landing {
-    background-color: rgba(237, 115, 63, 0.2);
+    background-color: var( --secondary__color );
 }
 
 header {
-    height: calc( 100vh - 80px );
+    height: calc( 80vh - 80px );
 }
 
 .nav__link {
@@ -181,4 +182,16 @@ button:active {
 .highlights__wave {
     width: 100%;
     opacity: 0.2;
+}
+
+.highlights__wave--bottom {
+    transform: translateY(4px);
+}
+
+
+/* CATALOGUE */
+
+#catalogue {
+    height: 70vh;
+    background-color: var( --secondary__color );
 }
