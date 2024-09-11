@@ -7,6 +7,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/8a3e67506d.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 
 <body>
@@ -16,13 +17,32 @@
                 <img src="./assets/Library.svg" alt="" class="logo">
                 <ul class="nav__links">
                     <li>
-                        <a href="" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">Home</a>
                     </li>
                     <li>
-                        <a href="" class="nav__link">Contact</a>
+                        <a class="nav__link">Contact</a>
                     </li>
                     <li>
-                        <a href="" class="nav__link nav__link--primary">Books</a>
+                        <a href="#featured" class="nav__link nav__link--primary">Books</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#featured" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link no__cursor">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -32,7 +52,7 @@
                 <div class="header__description">
                     <h1>America's most awarded online library platform</h1>
                     <h2>Find your dream book with <span class="text__orange">Library</span></h2>
-                    <button class="btn">Browse Books</button>
+                    <a href="#featured"><button class="btn">Browse Books</button></a>
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="./assets/undraw_road_to_knowledge.svg" alt="">
@@ -260,7 +280,7 @@
         <section id="explore">
             <div class="explore__container">
                 <h2 class="explore__title">Explore more <span class="text__orange">Books</span></h2>
-                <button class="btn">Browse Books</button>
+                <a href="#featured"><button class="btn">Browse Books</button></a>
             </div>
         </section>
     </main>
