@@ -44,6 +44,7 @@ nav {
 
 .logo {
     width: 160px;
+    filter:hue-rotate(110deg);
 }
 
 ul {
@@ -124,6 +125,10 @@ h2 {
 
 button {
     cursor: pointer;
+}
+
+.no__cursor {
+    cursor: not-allowed;
 }
 
 button:active {
@@ -231,20 +236,106 @@ button:active {
     width: 20%;
 }
 
-.featured__book--name {
+.book--name {
     font-weight: bold;
     line-height: 1.1;
     padding: 4px 0;
 }
 
-.featured__book--price {
+.book--price {
     font-weight: bold;
     font-size: 14px;
     padding-top: 4px;
+}
+
+.book--rating i {
+    color: #c7a302;
+    font-size: 14px;
 }
 
 /* LATEST */
 
 #latest {
     height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.latest__container {
+    max-width: 1000px;
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 0;
+}
+
+.latest__books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.latest__book {
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* EXPLORE */
+
+#explore {
+    display: flex;
+    justify-content: center;
+    background-color: var( --secondary__color );
+    padding: 56px 0;
+}
+
+.explore__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    padding: 72px 0;
+    width: 100%;
+    color: white;
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer__links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 24px 0 20px 0;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__logo {
+    width: 160px;
+    filter: grayscale(1) invert(1);
 }
